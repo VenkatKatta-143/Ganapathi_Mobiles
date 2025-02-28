@@ -109,3 +109,24 @@ forgotPasswordForm.addEventListener('submit', (e) => {
     // Hide the forgot password modal
     forgotPasswordModal.style.display = 'none';
 });
+
+// Back to Top button
+const backToTopButton = document.querySelector('.back-to-top');
+
+// Function to scroll to top
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Add event listener to back to top button
+backToTopButton.addEventListener('click', scrollToTop);
+
+// Show back to top button when user scrolls down
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
