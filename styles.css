@@ -100,3 +100,17 @@ footer {
 #forgot-password-modal {
     display: none;
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size:18px;
+    color: #333;
+    text-decoration: none;
+    display: none;
+}
+
+.back-to-top:hover {
+    color:#666;
+}
